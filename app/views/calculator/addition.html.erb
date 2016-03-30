@@ -1,0 +1,15 @@
+<b>
+	<center> <h1>This is addition Program </h1> </center>
+</b>
+
+
+<%= form_tag calculator_addition_path do %>
+
+<%= render 'form' %>
+
+<%=submit_tag "Addition"%>
+<%end%>
+
+<% if @c != 0%>
+Addition is:<%= @c   %>
+<% end %>
